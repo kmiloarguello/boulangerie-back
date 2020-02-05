@@ -9,7 +9,8 @@ import xyz.camiloarguello.Service.PastrieService;
 import java.util.Collection;
 
 @RestController
-@CrossOrigin(origins = "http://localhost:4200", allowedHeaders = "*")
+//@CrossOrigin(origins = "http://localhost:4200", allowedHeaders = "*")
+@CrossOrigin(origins = "https://camiloarguello.xyz", allowedHeaders = "*")
 @RequestMapping("/pastries")
 public class PastrieController {
 
