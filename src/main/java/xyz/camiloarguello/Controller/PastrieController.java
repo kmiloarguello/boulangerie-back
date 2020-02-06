@@ -10,7 +10,7 @@ import java.util.Collection;
 
 @RestController
 //@CrossOrigin(origins = "http://localhost:4200", allowedHeaders = "*")
-@CrossOrigin(origins = "https://camiloarguello.xyz", allowedHeaders = "*")
+@CrossOrigin(origins = "https://boulangerie-front.herokuapp.com", allowedHeaders = "*")
 @RequestMapping("/pastries")
 public class PastrieController {
 
