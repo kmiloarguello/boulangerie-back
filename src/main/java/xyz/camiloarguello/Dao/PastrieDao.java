@@ -33,6 +33,14 @@ public class PastrieDao implements iPastrieDao {
                         "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Eclairs_with_chocolate_icing_at_Cafe_Blue_Hills.jpg/420px-Eclairs_with_chocolate_icing_at_Cafe_Blue_Hills.jpg",
                         14,
                         "C'est une pâtisserie d'origine française constituée de pâte à choux allongée et fourrée de crème pâtissière, avec un glaçage sur le dessus. "));
+
+                put(4, new Pastrie(4,
+                        "Éclairxx",
+                        "Dessertxx",
+                        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Eclairs_with_chocolate_icing_at_Cafe_Blue_Hills.jpg/420px-Eclairs_with_chocolate_icing_at_Cafe_Blue_Hills.jpg",
+                        14,
+                        "C'est une pâtisserie d'origine française constituée de pâte à choux allongée et fourrée de crème pâtissière, avec un glaçage sur le dessus. "));
+
             }
         };
     }
