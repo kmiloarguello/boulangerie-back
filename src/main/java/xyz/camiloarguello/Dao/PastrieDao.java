@@ -35,11 +35,11 @@ public class PastrieDao implements iPastrieDao {
                         "C'est une pâtisserie d'origine française constituée de pâte à choux allongée et fourrée de crème pâtissière, avec un glaçage sur le dessus. "));
 
                 put(4, new Pastrie(4,
-                        "Éclairxx",
-                        "Dessertxx",
-                        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Eclairs_with_chocolate_icing_at_Cafe_Blue_Hills.jpg/420px-Eclairs_with_chocolate_icing_at_Cafe_Blue_Hills.jpg",
-                        14,
-                        "C'est une pâtisserie d'origine française constituée de pâte à choux allongée et fourrée de crème pâtissière, avec un glaçage sur le dessus. "));
+                        "Soufflé",
+                        "Sucré en dessert",
+                        "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Souffle_Kyoto01n2820.jpg/420px-Souffle_Kyoto01n2820.jpg",
+                        7,
+                        "Un soufflé est une spécialité culinaire réputée pour sa légèreté. C'est un plat préparé avec des jaunes d'œufs combinés avec des ingrédients variés et auxquels on incorpore ensuite des blancs d'œufs montés en neige. "));
 
             }
         };
@@ -59,6 +59,11 @@ public class PastrieDao implements iPastrieDao {
 
     @Override
     public void insertPastrieToDB(Pastrie pastrie){
+
+  //      Pastrie p = pastries.get(pastrie.getId());
+
+//        if(pastrie.getId() == p.getId()){ return; }
+
         this.pastries.put(pastrie.getId(), pastrie);
     }
 
