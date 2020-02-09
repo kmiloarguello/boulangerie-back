@@ -1,8 +1,13 @@
 package xyz.camiloarguello.Entity;
 
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
+
+@Document(collection = "pastries")
 public class Pastrie {
 
-    private int id;
+    @Id
+    private String id;
     private String name;
     private String type;
     private String image;
@@ -11,7 +16,7 @@ public class Pastrie {
 
     // Constructors
 
-    public Pastrie(int id, String name, String type, String image, int price, String description) {
+    public Pastrie(String id, String name, String type, String image, int price, String description) {
         this.id = id;
         this.name = name;
         this.type = type;
@@ -24,11 +29,11 @@ public class Pastrie {
 
     // Getters and Setters
 
-    public int getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
 
