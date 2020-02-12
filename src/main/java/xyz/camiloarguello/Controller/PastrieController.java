@@ -10,8 +10,8 @@ import xyz.camiloarguello.Entity.Pastrie;
 import java.util.Collection;
 
 @RestController
-// @CrossOrigin(origins = "http://localhost:4200", allowedHeaders = "*")
-@CrossOrigin(origins = "https://boulangerie-front.herokuapp.com", allowedHeaders = "*")
+@CrossOrigin(origins = "http://localhost:4200", allowedHeaders = "*")
+// @CrossOrigin(origins = "https://boulangerie-front.herokuapp.com", allowedHeaders = "*")
 @RequestMapping("/pastries")
 public class PastrieController {
 
@@ -28,6 +28,11 @@ public class PastrieController {
         return this.pastrieRepository.findById(id).orElse(null);
     }
 
+    @RequestMapping(value = "/type/{type}",method = RequestMethod.GET)
+    public Collection<Pastrie> getByType(@PathVariable("type") String type) {
+        return this.pastrieRepository.findByType(type);
+    }
+
     @RequestMapping(method = RequestMethod.POST, consumes = MediaType.APPLICATION_JSON_VALUE)
     public void insertPastrieToDB(@RequestBody Pastrie pastrie){
         this.pastrieRepository.insert(pastrie);
@@ -42,4 +47,6 @@ public class PastrieController {
     public void updatePastrie(@RequestBody Pastrie pastrie){
         this.pastrieRepository.save(pastrie);
     }
+
+
 }
