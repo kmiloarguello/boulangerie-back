@@ -10,8 +10,8 @@ import xyz.camiloarguello.Entity.Pastrie;
 import java.util.Collection;
 
 @RestController
-@CrossOrigin(origins = "http://localhost:4200", allowedHeaders = "*")
-// @CrossOrigin(origins = "https://boulangerie-front.herokuapp.com", allowedHeaders = "*")
+// @CrossOrigin(origins = "http://localhost:4200", allowedHeaders = "*")
+@CrossOrigin(origins = "https://boulangerie-front.herokuapp.com", allowedHeaders = "*")
 @RequestMapping("/pastries")
 public class PastrieController {
 
